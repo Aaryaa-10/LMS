@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="../js/validation.js" defer></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Library Management System - Register</h2>
+        <form id="registerForm" class="mt-4">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                <small class="text-danger" id="nameError"></small>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="regEmail" placeholder="Enter your email">
+                <small class="text-danger" id="emailError"></small>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="regPassword" placeholder="Create a password">
+                <small class="text-danger" id="passwordError"></small>
+            </div>
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password">
+                <small class="text-danger" id="confirmPasswordError"></small>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="validateRegistration()">Register</button>
+        </form>
+    </div>
+    <script src="js/val.js"></script>
+</body>
+</html>
